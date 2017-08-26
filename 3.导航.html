@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>导航</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 楷体;
+      background-color: #C3C4C5;
+    }
+    .nav{
+      height: 40px;
+      margin-top:50px;
+      text-align: center;
+      list-style: none;
+    }
+    li{
+      width: 140px;
+      height: 40px;
+      text-align: center;
+      line-height:40px;
+      float: left;
+      position: relative;
+      color: darkred;
+      font-size: 20px;
+      /*显示3d效果*/
+      transform-style: preserve-3d;
+      transition: all 1s;
+    }
+    li span{
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    li span:nth-child(2){
+      background-color: blueviolet;
+      transform: rotateX(-90deg) translateZ(20px);
+    }
+    li span:nth-child(1){
+      background-color: deepskyblue;
+      transform: translateZ(20px);
+    }
+    li:hover{
+      transform: rotateX(90deg);
+    }
+  </style>
+</head>
+<body>
+<ul class="nav">
+  <li>
+    <span>每日推荐</span>
+    <span>爆笑一刻</span>
+  </li>
+  <li>
+    <span>头条要闻</span>
+    <span>货币紧缺</span>
+  </li>
+  <li>
+    <span>野史趣闻</span>
+    <span>官方盗墓</span>
+  </li>
+  <li>
+    <span>生活知识</span>
+    <span>快速打包</span>
+  </li>
+  <li>
+    <span>联系我们</span>
+    <span>啥子呦</span>
+  </li>
+</ul>
+</body>
+</html>
